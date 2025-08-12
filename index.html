@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+
+    <div style="border: 3px solid black;">
+
+        <center>
+            <h1>register here</h1>
+        <form>
+            <input type="text" placeholder="enter firstname" id="firstname">
+            <br>
+            <br>
+            <input type="text" placeholder="enter lastname" id="lastname">
+            <br>
+            <br>
+            <input type="number" placeholder="enter age" id="age" >
+            <br>
+            <br>
+            
+            <button type="button" onclick="register_form()">submit</button>
+        </form>
+        </center>
+    </div>
+
+
+    <h1>registered details:</h1>
+    <h3 id="firstname_display"></h3>
+    <h3 id="lastname_display"></h3>
+    <h3 id="age_display"></h3>
+
+    <script>
+        function register_form(){
+            console.log("yes ulla vandhutten!...");
+
+            var firstname=document.getElementById('firstname').value;
+            console.log("firstname is",firstname);
+
+            var lastname=document.getElementById('lastname').value;
+            console.log("lastname is",lastname);
+
+            var age=document.getElementById('age').value;
+            console.log("age is",age);
+
+            document.getElementById('firstname_display').innerHTML='Firstname is '+firstname;
+            document.getElementById('lastname_display').innerHTML='Latname is '+lastname;
+            document.getElementById('age_display').innerHTML='age is '+age;
+        }
+    </script>
+    
+</body>
+</html>
